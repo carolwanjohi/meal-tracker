@@ -8,17 +8,17 @@ import { Meal } from './meal.model';
 
     <div class = "form-group">
         <label>Enter Name of new meal:</label>
-        <input class = "form-control" #newName>
+        <input class = "form-control" #newName type="text">
     </div>
 
     <div class = "form-group">
         <label>Enter Details of new meal:</label>
-        <input class = "form-control" #newDetails>
+        <input class = "form-control" #newDetails type="text">
     </div>
 
     <div class = "form-group">
         <label>Enter Calories of new meal:</label>
-        <input class = "form-control" #newCalories>
+        <input class = "form-control" #newCalories type = "number">
         <button
             (click) = "
             addClicked (newName.value, newDetails.value, newCalories.value);
@@ -33,9 +33,13 @@ import { Meal } from './meal.model';
 export class NewMealComponent {
     @Output() newMealSender = new EventEmitter();
 
-    addClicked(name : string, details : string, calories : number) {
+    addClicked(name, details, calories) {
         var newMealToAdd : Meal = new Meal(name, details, calories);
 
-        this.newMealSender.emit(newMealToAdd);
+        if( name === '' || details === '' || calories === '' ) {
+            alert('Plesae fill in all the form fields');
+        }  else {
+            this.newMealSender.emit(newMealToAdd);
+        }
     }
 }
