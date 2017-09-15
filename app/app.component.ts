@@ -21,7 +21,7 @@ import { Meal } from './meal.model'
       </section>
 
       <hr/>
-      
+
       <new-meal
           (newMealSender) = "addMeal($event)"
       ></new-meal>
@@ -37,6 +37,12 @@ import { Meal } from './meal.model'
           [childSelectedMeal] = "selectedMeal"
           (doneClickedSender) = "finishedEditing()"
       ></edit-meal>
+
+      <footer>
+          <p id="copyright"><br/>
+              <small>&copy; 2017 Meal Tracker</small>
+          </p>
+      </footer>
 
   </div>
   `
