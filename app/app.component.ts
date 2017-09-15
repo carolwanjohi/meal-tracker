@@ -1,14 +1,42 @@
 import { Component } from '@angular/core';
+import { Meal } from './meal.model'
 
 @Component({
   selector: 'my-app',
   template: `
   <div class="container">
-      <h1>My First Angular 2 App</h1>
+
+      <section class="section1 jumbotron">
+          <h1>Meal tracker</h1>
+          <p>A Food Diary Plus More</p>
+      </section>
+
+      <section class="section2">
+          <p>This is an online Food Diary where you can log and view a list the foods you've had. <br/>
+          You can also select whether you want to see only your high calorie or low calorie meals.
+          </p>
+          <p>Fill out the form and keep track of your meals.</p>
+      </section>
+
+      <div *ngFor="let currentMeal of masterMealList">
+          <h4> {{currentMeal.name}} </h4>
+          <p> {{currentMeal.details}} <p>
+          <p>  {{currentMeal.calories}} <p>
+      </div>
+
   </div>
   `
 })
 
 export class AppComponent {
+
+    // Meal array to be accessed by the children components
+
+    public masterMealList : Meal [] = [
+
+        new Meal("Fires", "Only ate half of them", 365),
+        new Meal("Hamburger", "Didn't get a soda or cheese on my burger!", 354),
+    ] 
+
 
 }
