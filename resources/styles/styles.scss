@@ -1,5 +1,16 @@
-$blue : blue;
+$blue : #F4ECF7 ;
 
-h1 {
-    color: blue;
+/*Style section1 in App Component*/ 
+.section1 {
+    background-color: $blue;
+    text-align: center;
+}
+
+/*Style footer in App Component*/ 
+footer {
+    text-align: center;
+    background-color: $blue;
+    p {
+        padding-bottom: 1em;;
+    }
 }
