@@ -24,7 +24,13 @@ import { Meal } from './meal.model'
 
       <meal-list
           [childMealList] = "masterMealList"
+          (clickSender) = "showDetails($event)"
       ></meal-list>
+
+      <edit-meal
+          [childSelectedMeal] = "selectedMeal"
+          (doneClickedSender) = "finishedEditing()"
+      ></edit-meal>
 
   </div>
   `
@@ -45,5 +51,19 @@ export class AppComponent {
     addMeal( newMealFromChild : Meal) {
         this.masterMealList.push( newMealFromChild );
     }
+
+    // Show meal details when Edit is clicked
+    showDetails( clickedMeal : Meal) {
+        this.selectedMeal = clickedMeal;
+    }
+
+    // Property for selected meal
+    selectedMeal : Meal = null;
+
+    // Revert selected meal to null after editing is done
+    finishedEditing() {
+        this.selectedMeal = null;
+    }
+
 
 }
