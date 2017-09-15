@@ -13,5 +13,5 @@ import { Meal } from './meal.model';
 })
 
 export class MealListComponent {
-    @Input() childMealList : Meal [];
+    @Input() childMealList : Meal[];
 }

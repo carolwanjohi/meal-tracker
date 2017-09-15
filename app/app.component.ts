@@ -18,11 +18,9 @@ import { Meal } from './meal.model'
           <p>Fill out the form and keep track of your meals.</p>
       </section>
 
-      <div *ngFor="let currentMeal of masterMealList">
-          <h4> {{currentMeal.name}} </h4>
-          <p> {{currentMeal.details}} <p>
-          <p>  {{currentMeal.calories}} <p>
-      </div>
+      <meal-list
+          [childMealList] = "masterMealList"
+      ></meal-list>
 
   </div>
   `
