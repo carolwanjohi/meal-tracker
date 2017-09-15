@@ -3,7 +3,7 @@ import { Meal } from './meal.model';
 
 @Component({
     selector : 'meal-list',
-    template : `
+    template : `  
     <select (change) = "onChange($event.target.value)">
         <option value = "all">Show All Foods</option>
         <option value = "high">High Calorie Food</option>
@@ -11,13 +11,16 @@ import { Meal } from './meal.model';
     </select>
 
     <h2>Logged Meals</h2>
+    
+    <section class = "currentMealList">
 
-    <div class = "currentMealList" 
-        *ngFor="let currentMeal of childMealList | calorieFilter : selectedCalorieFilter">
+        <div *ngFor="let currentMeal of childMealList | calorieFilter : selectedCalorieFilter">
 
-        <h4 (click) = "nameHasBeenClicked(currentMeal)"> {{currentMeal.name}} </h4>
+            <h4 (click) = "nameHasBeenClicked(currentMeal)"> {{currentMeal.name}} </h4>
 
-    </div>
+        </div>
+        
+    </section>
     `
 })
 
