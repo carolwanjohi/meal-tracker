@@ -5,7 +5,9 @@ import { Meal } from './meal.model';
     selector: 'edit-meal',
     template: `
     <div *ngIf = "childSelectedMeal">
-
+        
+        <hr/>
+        
         <h2>Edit Meal</h2>
 
         <div class = "form-group">

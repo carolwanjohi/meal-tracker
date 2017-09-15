@@ -12,16 +12,22 @@ import { Meal } from './meal.model'
       </section>
 
       <section class="section2">
-          <p>This is an online Food Diary where you can log and view a list the foods you've had. <br/>
-          You can also select whether you want to see only your high calorie or low calorie meals.
-          </p>
-          <p>Fill out the form and keep track of your meals.</p>
+          <p>This is an online Food Diary where you can : </p> 
+          <ol>
+              <li>log and view a list the foods you've had</li>
+              <li>edit the details about a meal by clicking on its name</li>
+              <li>fill out a form and keep track of your meals</li>
+          </ol>
       </section>
 
+      <hr/>
+      
       <new-meal
           (newMealSender) = "addMeal($event)"
       ></new-meal>
 
+      <hr/>
+        
       <meal-list
           [childMealList] = "masterMealList"
           (clickSender) = "showDetails($event)"
