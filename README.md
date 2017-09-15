@@ -36,7 +36,8 @@ No known bugs
 - Node packages
 - Bower packages
 - Angular 2
-- Typescript
+- TypeScript
+- TypeScript Compiler
 
 ### License
 
