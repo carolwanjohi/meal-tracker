@@ -18,6 +18,10 @@ import { Meal } from './meal.model'
           <p>Fill out the form and keep track of your meals.</p>
       </section>
 
+      <new-meal
+          (newMealSender) = "addMeal($event)"
+      ></new-meal>
+
       <meal-list
           [childMealList] = "masterMealList"
       ></meal-list>
@@ -36,5 +40,10 @@ export class AppComponent {
         new Meal("Hamburger", "Didn't get a soda or cheese on my burger!", 354),
     ] 
 
+    // Add a new meal to the master meal list
+
+    addMeal( newMealFromChild : Meal) {
+        this.masterMealList.push( newMealFromChild );
+    }
 
 }
