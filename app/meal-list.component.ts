@@ -4,17 +4,18 @@ import { Meal } from './meal.model';
 @Component({
     selector : 'meal-list',
     template : `
-    <h2>Logged Meals</h2>
-
     <select (change) = "onChange($event.target.value)">
         <option value = "all">Show All Foods</option>
         <option value = "high">High Calorie Food</option>
         <option value = "low">Low Calorie Food</option>
     </select>
 
-    <div *ngFor="let currentMeal of childMealList | calorieFilter : selectedCalorieFilter">
+    <h2>Logged Meals</h2>
 
-        <h4 (click) = "editButtonHasBeenClicked(currentMeal)"> {{currentMeal.name}} </h4>
+    <div class = "currentMealList" 
+        *ngFor="let currentMeal of childMealList | calorieFilter : selectedCalorieFilter">
+
+        <h4 (click) = "nameHasBeenClicked(currentMeal)"> {{currentMeal.name}} </h4>
 
     </div>
     `
@@ -25,7 +26,7 @@ export class MealListComponent {
 
     @Output() clickSender = new EventEmitter();
 
-    editButtonHasBeenClicked( mealToEdit : Meal ) {
+    nameHasBeenClicked( mealToEdit : Meal ) {
         this.clickSender.emit(mealToEdit);
     }
 

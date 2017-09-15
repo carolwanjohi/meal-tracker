@@ -4,7 +4,7 @@ import { Meal } from './meal.model'
 @Component({
   selector: 'my-app',
   template: `
-  <div class="container">
+  <div class="container-fluid">
 
       <section class="section1 jumbotron">
           <h1>Meal tracker</h1>
@@ -54,7 +54,7 @@ export class AppComponent {
 
     public masterMealList : Meal [] = [
 
-        new Meal("Fires", "Only ate half of them", 365),
+        new Meal("Fries", "Only ate half of them", 365),
         new Meal("Hamburger", "Didn't get a soda or cheese on my burger!", 540),
     ] 
 
