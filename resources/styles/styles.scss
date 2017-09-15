@@ -6,6 +6,22 @@ $blue : #F4ECF7 ;
     text-align: center;
 }
 
+/*Style meal-list in App Component*/
+meal-list {
+    text-align: center;
+
+    height: 5vh;
+
+    .currentMealList {
+        height : 30vh;
+        overflow: scroll;
+    }
+
+    h4 {
+        cursor: pointer;
+    }
+} 
+
 /*Style footer in App Component*/ 
 footer {
     text-align: center;
