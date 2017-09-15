@@ -43,7 +43,7 @@ export class AppComponent {
     public masterMealList : Meal [] = [
 
         new Meal("Fires", "Only ate half of them", 365),
-        new Meal("Hamburger", "Didn't get a soda or cheese on my burger!", 354),
+        new Meal("Hamburger", "Didn't get a soda or cheese on my burger!", 540),
     ] 
 
     // Add a new meal to the master meal list
