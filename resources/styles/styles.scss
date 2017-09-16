@@ -1,9 +1,25 @@
 $blue : #F4ECF7 ;
+$red : #B03A2E;
+$pink : #B03A2E;
+$purple : #76448A;
+$yellow : #6C3483;
+$green : #21618C;
+$fontStyle1 : 'Mate SC', serif;
 
 /*Style section1 in App Component*/ 
 .section1 {
     background-color: $blue;
-    text-align: center;}
+    text-align: center;
+    font-family: $fontStyle1;
+
+    h1 {
+        font-size: 12em;
+    }
+
+    p {
+        font-size: 4em;
+    }
+}
 
 /*Style meal-list in App Component*/
 meal-list {
@@ -25,7 +41,95 @@ meal-list {
 footer {
     text-align: center;
     background-color: $blue;
+    font-family: $fontStyle1;
     p {
+        font-size: 1.75em;
         padding-bottom: 1em;;
+    }
+}
+
+
+/*Animate content in p in section1, p in footer*/
+
+.section1 p, footer p {
+    color: $red;
+    position: relative;
+    /* Chrome and Safari*/
+    -webkit-animation-name: motto-animation;
+    -webkit-animation-duration: 4s;
+    -webkit-animation-iteration-count: infinite;
+    /*Firefox*/
+    -moz-animation-name: motto-animation;
+    -moz-animation-duration: 4s;
+    -moz-animation-iteration-count: infinite;
+    /*Opera*/
+    -o-animation-name: motto-animation;
+    -o-animation-duration: 4s;
+    -o-animation-iteration-count: infinite;
+    animation-name: motto-animation;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+
+/*Chrome and Safari*/
+
+@-webkit-keyframes motto-animation {
+    0% {
+    color: $red;
+    }
+    25% {
+    color: $pink;
+    }
+    50% {
+    color: $purple;
+    }
+    75% {
+    color: $yellow;
+    }
+    100% {
+    color: $green;
+    }
+}
+
+
+/*Fifefox*/
+
+@-moz-keyframes motto-animation {
+    0% {
+    color: $red;
+    }
+    25% {
+    color: $pink;
+    }
+    50% {
+    color: $purple;
+    }
+    75% {
+    color: $yellow;
+    }
+    100% {
+    color: $green;
+    }
+}
+
+
+/*Opera*/
+
+@-o-keyframes motto-animation {
+    0% {
+    color: $red;
+    }
+    25% {
+    color: $pink;
+    }
+    50% {
+    color: $purple;
+    }
+    75% {
+    color: $yellow;
+    }
+    100% {
+    color: $green;
     }
 }
