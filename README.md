@@ -3,14 +3,23 @@
 
 ## By **[Carol Wanjohi](https://github.com/carolwanjohi)**
 
+![Meal Tracker](resources/images/screenshot1.png)
+
 ## Description
-This is a meal tracking web application. The user can input the name of the food, details about the food and its amount of calories. This information is filled in a form and submitted by clicking on the **Add New Meal** button. This information is stored in a list which contains the meals logged by the user. <br/>
+
+This is a meal tracking web application. The user can input the name of the food, details about the food and its amount of calories. This information is filled in a form and submitted by clicking on the **Add New Meal** button. 
+
+![Meal Tracker - Add New Meal](resources/images/screenshot2.png)
+
+This information is stored in a list which contains the meals logged by the user. <br/>
 The list has the following display options:
 * All the meals (this is the default list)
 * High calorie meals
 * Low calorie meals
 
 The user can also click on a food name to edit its name, details or calories (in case the user decided to pretend their fries were 100 calories instead of 365).
+
+![Meal Tracker - Add New Meal](resources/images/screenshot3.png)
 
 ## User Stories
 As a user, ...
