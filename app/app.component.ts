@@ -14,9 +14,9 @@ import { Meal } from './meal.model'
       <section class="section2">
           <p>This is an online Food Diary where you can : </p> 
           <ol>
-              <li>log and view a list the foods you've had</li>
-              <li>edit the details about a meal by clicking on its name</li>
               <li>fill out a form and keep track of your meals</li>
+              <li>view a list the foods you've had</li>
+              <li>edit the details about a meal by clicking on its name</li>
           </ol>
       </section>
 
