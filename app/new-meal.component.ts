@@ -7,17 +7,17 @@ import { Meal } from './meal.model';
     <h2>Add a new Meal</h2>
 
     <div class = "form-group-lg">
-        <label>Enter Name of new meal:</label>
+        <label>Enter the Name of new meal:</label>
         <input class = "form-control" #newName type="text" placeholder = "Name of the meal">
     </div>
 
     <div class = "form-group-lg">
-        <label>Enter Details of new meal:</label>
-        <textarea class = "form-control" #newDetails type="text" rows="3" placeholder = "Deatails about the meal"></textarea>
+        <label>Enter the Details about the new meal:</label>
+        <textarea class = "form-control" #newDetails type="text" rows="3" placeholder = "Details about the meal"></textarea>
     </div>
 
     <div class = "form-group-lg">
-        <label>Enter Calories of new meal:</label>
+        <label>Enter the Calories of the new meal:</label>
         <input class = "form-control" #newCalories type = "number" placeholder = "Number of calories in the meal">
         <button
             class = "btn btn-info"
