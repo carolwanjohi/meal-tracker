@@ -41,6 +41,30 @@ $fontStyle2 : 'Overlock', cursive;
     }
 } 
 
+/*Style new-meal and edit-meal in App Component*/
+new-meal, edit-meal {
+    font-family: $fontStyle2; 
+
+    h2 {
+        font-family: $fontStyle1;
+        font-size: 4em;
+    }
+
+    label {
+        font-size: 1.75em;
+    }
+
+    button {
+        margin-top: 2vh;
+    }
+} 
+
+/*Style h2 of new-meal in App Component*/ 
+new-meal {
+    h2 {
+        text-align: center;
+    }
+}
 /*Style meal-list in App Component*/
 meal-list {
     text-align: center;
