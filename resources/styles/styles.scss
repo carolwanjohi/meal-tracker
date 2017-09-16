@@ -5,6 +5,8 @@ $pink : #B03A2E;
 $purple : #76448A;
 $yellow : #6C3483;
 $green : #21618C;
+$orange : #5bc0de;
+$white : #FDFEFE;  
 
 /*Font families*/ 
 $fontStyle1 : 'Mate SC', serif;
@@ -12,6 +14,7 @@ $fontStyle2 : 'Overlock', cursive;
 
 /*Style section1 in App Component*/ 
 .section1 {
+
     background-color: $blue;
     text-align: center;
     font-family: $fontStyle1;
@@ -23,10 +26,12 @@ $fontStyle2 : 'Overlock', cursive;
     p {
         font-size: 4em;
     }
+
 }
 
 /*Style section2 in App Component*/
 .section2 {
+
     text-align: center;
     font-family: $fontStyle2;
 
@@ -43,6 +48,7 @@ $fontStyle2 : 'Overlock', cursive;
 
 /*Style new-meal and edit-meal in App Component*/
 new-meal, edit-meal {
+
     font-family: $fontStyle2; 
 
     h2 {
@@ -61,15 +67,33 @@ new-meal, edit-meal {
 
 /*Style h2 of new-meal in App Component*/ 
 new-meal {
+
     h2 {
         text-align: center;
     }
+
 }
+
 /*Style meal-list in App Component*/
 meal-list {
-    text-align: center;
 
+    font-family: $fontStyle2; 
+    text-align: center;
     height: 5vh;
+
+    select {
+        font-family: $fontStyle1;
+        font-size: 1.5em;
+        position: absolute;
+        background-color: $orange;
+        color: $white;
+        border-color: $orange;
+    }
+
+    h2 {
+        font-family: $fontStyle1;
+        font-size: 4.5em;
+    }
 
     .currentMealList {
         height : 30vh;
@@ -78,24 +102,29 @@ meal-list {
 
     h4 {
         cursor: pointer;
+        font-size: 3em;
     }
+
 } 
 
 /*Style footer in App Component*/ 
 footer {
+
     text-align: center;
     background-color: $blue;
     font-family: $fontStyle1;
+
     p {
         font-size: 1.75em;
         padding-bottom: 1em;;
     }
+
 }
 
 
 /*Animate content in p in section1, p in footer*/
 
-.section1 p, footer p {
+.section1 p, footer p, meal-list h2, new-meal h2, {
     color: $red;
     position: relative;
     /* Chrome and Safari*/
