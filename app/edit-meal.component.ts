@@ -17,7 +17,7 @@ import { Meal } from './meal.model';
 
         <div class = "form-group-lg">
             <label>Enter Details of new meal:</label>
-            <textarea class = "form-control" [(ngModel)] = "childSelectedMeal.details" type = "text" placeholder = "Details about the meal"></textarea>
+            <textarea class = "form-control" [(ngModel)] = "childSelectedMeal.details" type = "text" placeholder = "Details about the meal" rows="3"></textarea>
         </div>
 
         <div class = "form-group-lg">
