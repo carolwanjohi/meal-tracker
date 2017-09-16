@@ -1,10 +1,14 @@
+/*Colors*/ 
 $blue : #F4ECF7 ;
 $red : #B03A2E;
 $pink : #B03A2E;
 $purple : #76448A;
 $yellow : #6C3483;
 $green : #21618C;
+
+/*Font families*/ 
 $fontStyle1 : 'Mate SC', serif;
+$fontStyle2 : 'Overlock', cursive;
 
 /*Style section1 in App Component*/ 
 .section1 {
@@ -20,6 +24,22 @@ $fontStyle1 : 'Mate SC', serif;
         font-size: 4em;
     }
 }
+
+/*Style section2 in App Component*/
+.section2 {
+    text-align: center;
+    font-family: $fontStyle2;
+
+    p {
+        font-size: 3em;
+    }
+
+    ol {
+        font-size: 1.75em;
+        display: inline-block;
+        text-align: left;
+    }
+} 
 
 /*Style meal-list in App Component*/
 meal-list {
