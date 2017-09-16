@@ -22,7 +22,7 @@ As a user, ...
 ## Setup/Installation Requirements
 
 * You can also **clone this repo**. 
-  * You will need to **run npm install and bower install** for the dependancies. For the commands to work you need **node and npm installed** on your machine.
+  * You will need to **run npm install and bower install** for the dependancies. For these commands to work you need **node and npm installed** on your machine.
 
 ## Known Bugs
 
