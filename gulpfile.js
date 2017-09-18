@@ -30,15 +30,6 @@ var shell = require('gulp-shell');
 var sass = require('gulp-sass');
 var sourcemaps = require('gulp-sourcemaps');
 
-// Typings issue qwith heroku
-var typings = require('typings');
-
-gulp.task('installTypings', function() {
-  let gulpTypings = require('gulp-typings');
-  return gulp.src('./typings.json')
-    .pipe(gulpTypings());
-});
-
 // Test gulp task in the terminal
 gulp.task('myTask', function() {
   console.log("Hello Gulp");
