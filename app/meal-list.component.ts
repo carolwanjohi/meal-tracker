@@ -3,12 +3,15 @@ import { Meal } from './meal.model';
 
 @Component({
     selector : 'meal-list',
-    template : `  
+    template : ` 
+
+   
     <select (change) = "onChange($event.target.value)">
         <option value = "all">Show All Foods</option>
         <option value = "high">High Calorie Food</option>
         <option value = "low">Low Calorie Food</option>
     </select>
+
 
     <h2>Logged Meals</h2>
     
